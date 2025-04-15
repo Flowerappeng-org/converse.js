@@ -14,6 +14,7 @@ export default o => {
         <form id="converse-register" class="converse-form">
             <legend class="col-form-label">${i18n_legend} ${o.domain}</legend>
             <p class="title">${o.title}</p>
+            <p class="title">test</p>
             <p class="form-help instructions">${o.instructions}</p>
             <div class="form-errors hidden"></div>
             ${o.form_fields}
@@ -37,6 +38,7 @@ export default o => {
                     <p>${i18n_has_account}</p>
                     <p><a class="login-here toggle-register-login" href="#converse/login">${i18n_login}</a></p>
                 </div>
+                <p class="title">this is a test</p>
             </fieldset>
         </form>
     `;

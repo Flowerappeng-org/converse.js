@@ -65,8 +65,8 @@ const register_link = () => {
     const i18n_hint_no_account = __("Don't have a chat account?");
     return html`
         <fieldset class="switch-form">
-            <!--<p>${i18n_hint_no_account}</p>
-            <p><a class="register-account toggle-register-login" href="#converse/register">${i18n_create_account}</a></p>-->
+            <p>${i18n_hint_no_account}</p>
+            <p><a class="register-account toggle-register-login" href="#converse/register">${i18n_create_account}</a></p>
         </fieldset>
     `;
 }
@@ -89,6 +89,7 @@ const auth_fields = (el) => {
 
     return html`
         <div class="form-group">
+        <p>test<p>
             <label for="converse-login-jid">${i18n_xmpp_address}:</label>
             <input id="converse-login-jid"
                 ?autofocus=${api.settings.get('auto_focus') ? true : false}

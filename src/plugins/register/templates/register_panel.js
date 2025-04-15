@@ -74,6 +74,7 @@ const REGISTRATION_FORM = 2;
 export default o => {
     return html`
         <converse-brand-logo></converse-brand-logo>
+          <p class="title">this is a test on the rgister page</p>
         ${o.model.get('registration_status') === CHOOSE_PROVIDER ? tpl_choose_provider() : ''}
         ${o.model.get('registration_status') === FETCHING_FORM ? tpl_form_request() : ''}
         ${o.model.get('registration_status') === REGISTRATION_FORM ? tpl_registration_form(o) : ''}
